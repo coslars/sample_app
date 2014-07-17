@@ -1,6 +1,5 @@
 SampleApp::Application.routes.draw do
 
-  get "users/new"
 =begin
   Routes that are not named
   get "static_pages/home"
@@ -10,6 +9,7 @@ SampleApp::Application.routes.draw do
 =end
 
   # Routes that are named.
+  resources :users
   root  'static_pages#home'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
