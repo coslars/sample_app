@@ -1,8 +1,10 @@
 language: ruby
 rvm:
   - 2.0.0
-before_install:
+before_deploy:
   - ./license_finder.sh
+after_failure:
+  - echo "--- License finder found un-approved licenses. ---"
 notifications:
   email:
     recipients:
