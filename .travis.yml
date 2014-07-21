@@ -2,4 +2,8 @@ language: ruby
 rvm:
   - 2.0.0
 before_install:
-  - ./script/travis/license_finder.sh
+  - ./license_finder.sh
+notifications:
+  email:
+    recipients:
+    - matthew.larson@flukenetworks.com
