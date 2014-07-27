@@ -10,7 +10,7 @@
 /tmp
 
 # Ignore other unneeded files.
-database.yml
+# commenting this out for travis to work - database.yml
 doc/
 *.swp
 *~
