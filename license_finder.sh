@@ -1,3 +1,3 @@
  #! /bin/bash
 
-license_finder
+license_finder show_results
