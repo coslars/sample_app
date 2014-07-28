@@ -15,7 +15,8 @@ group :development, :test do
   gem 'rspec-rails', '2.13.1'
   # MDL license_finder task for Pivotal
   gem 'license_finder'
-  gem 'thin'                                # Thin web server to replace WeBrick in Development
+  # Thin web server to replace WeBrick in Development
+  gem 'thin'
   # The following optional lines are part of the advanced setup.
   # gem 'guard-rspec', '2.5.0'
   # gem 'spork-rails', '4.0.0'
