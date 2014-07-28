@@ -5,6 +5,8 @@ before_deploy:
   - ./license_finder.sh
 after_failure:
   - echo "--- License finder found un-approved licenses. ---"
+after_success:
+  - echo "--- All licenses have been approved. ---"
 notifications:
   email:
     recipients:
